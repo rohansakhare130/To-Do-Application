@@ -1,38 +1,88 @@
+body {
+  background: #f3d940;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TodoHome-main {
+  background: #926000;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px 4px 4px #5a5f0e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight:bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Form-main {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1.5px solid #f3d940;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #fdfdfdad;
+}
+
+.todo-btn {
+  background: #f3d940;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+
+.Todolist {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #f3d940;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.incompleted {
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-trash {
+  margin-left: 0.75rem;
 }
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
+
+
